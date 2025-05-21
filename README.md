@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Começando
 
-Como rodar o prjeto localmente:
+Como rodar o projeto localmente:
 
 ```bash
 npm run dev
