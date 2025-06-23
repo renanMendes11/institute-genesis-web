@@ -3,12 +3,12 @@ import './styles.css'
 import '../../app/globals.css';
 import Footer from '@/components/footer/footer';
 
-export default function QuemSomos(){
+export default function Contribua(){
     return (
         < >
             <Header/>
                 <h1>
-                    Quem Somos
+                    Contribua
                 </h1>
             <Footer/>
         

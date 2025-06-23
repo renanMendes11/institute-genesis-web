@@ -25,8 +25,9 @@ git push origin feature/nome-da-sua-brach
 
 
 ## Rodando o projeto localmente:
-
+- Antes de rodar o servidor local, instale as dependências com npm install
 ```bash
+npm install 
 npm run dev
 ```
 Abra [http://localhost:3000](http://localhost:3000) com seu browser pra ver o resultado.

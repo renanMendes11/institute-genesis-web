@@ -1,12 +1,14 @@
 /* ===== ESTILOS GERAIS (Mobile First: 320px+) ===== */
 
 .header {
-  position: fixed;
   top: 0;
   width: 100%;
   background-color: #fff;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-container {
@@ -26,6 +28,7 @@
 
 .nav-container {
   position: relative;
+  padding: 10px;
 }
 
 .menu-toggle {
