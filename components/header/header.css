@@ -20,7 +20,7 @@
 }
 
 .logo-container .logo {
-  height: 135px;
+  height: 145px;
   margin: 17px 0 10px;
   padding: 40px 15px 40px 0px;
   object-fit: contain;
@@ -72,17 +72,22 @@
   color: #2D3359;
 }
 
-.nav a:hover {
+.nav a:hover {   
   color: #2d3359a8;
   text-decoration: underline;
 }
-
+main {
+  background-image: url('../../public/assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* HERO */
 .hero {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   position: relative;
   padding: 20px;
   flex-direction: column;
@@ -99,12 +104,16 @@
 }
 
 .hero .text-box {
-  max-width: 90%;
+  max-width: 100%;
   margin: 70px 10px 0 10px;
   padding: 10px 0 20px 0;
   text-align: left;
   position: relative;
   z-index: 2;
+}
+
+.hero .text-box h1 {
+  font-size: 38px;
 }
 
 .hero h1 {
