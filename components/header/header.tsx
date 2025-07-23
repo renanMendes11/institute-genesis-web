@@ -21,8 +21,8 @@ export default function Header() {
                 className="logo"
                 src="/assets/logoheader.png"
                 alt="Logo Instituto Gênesis"
-                width={130}
-                height={55}
+                width={140}
+                height={60}
                 priority
               />
           </Link>
