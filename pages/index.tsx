@@ -4,25 +4,119 @@ import '../app/globals.css';
 import './styles.css';
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState, useRef } from 'react';
 
 
 export default function Home() {
+const [slideIndex, setSlideIndex] = useState(0);
+  const slidesRef = useRef<NodeListOf<HTMLElement> | null>(null);
+
+  // Exibe slide com base no índice
+  const showSlide = (index: number) => {
+    if (!slidesRef.current) return;
+    slidesRef.current.forEach((slide, idx) => {
+      slide.style.opacity = idx === index ? "1" : "0";
+      slide.style.zIndex = idx === index ? "10" : "0";
+    });
+  };
+
+  // Função para trocar de slide com botão
+  const changeSlide = (delta: number) => {
+    const slides = slidesRef.current;
+    if (!slides) return;
+    const total = slides.length;
+    const newIndex = (slideIndex + delta + total) % total;
+    setSlideIndex(newIndex);
+    showSlide(newIndex);
+  };
+
+  // Intervalo automático de troca de slides
+  useEffect(() => {
+    slidesRef.current = document.querySelectorAll<HTMLElement>(".slide");
+    showSlide(slideIndex); // Exibe slide inicial apenas uma vez
+
+    const interval = setInterval(() => {
+      setSlideIndex((prev) => {
+        const next = (prev + 1) % (slidesRef.current?.length || 1);
+        showSlide(next);
+        return next;
+      });
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <Header/>
       <>
         <main>
-          <section className="hero">
-            <div className="overlay"></div>
-            <div className="text-box">
-              <h1>
-                O Instituto Gênesis nasceu para promover acolhimento, educação e oportunidade para crianças, adolescentes e famílias da comunidade local. Uma iniciativa que une fé, amor e transformação social através da capacitação e criatividade, fundamentadas na cosmovisão cristã.
-              </h1>
-              <Link href="/contribua" className="botao-contribua">
-                Contribua
-              </Link>
+          <section className="hero relative h-[800px] md:h-[900px] overflow-hidden">
+            
+            <div id="carousel" className="relative h-full w-full">
+                
+                
+                {/* Slide 1 */}
+                <div
+                className="slide h-full w-full absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 z-10"
+                style={{ backgroundImage: "url('/assets/banner2.jpg')" }}
+                >
+                    <div className="overlay">
+                    </div>
+                    
+                    <div className="relative z-30 flex flex-col justify-center items-start h-full text-left px-6 ml-10 md:px-20 container-banner-texto">
+                        <h1 className="texto-banner">
+                            Educação, acolhimento e oportunidades reais.
+                        </h1>
+                        <p className="p-banner">
+                            No Instituto Gênesis, nossa missão é transformar vidas através da fé, do cuidado e da inclusão.
+                        </p>
+                        <Link href="/contribua" className="botao-contribua">
+                            Contribua com essa missão
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Slide 2 */}
+                <div
+                className="slide h-full w-full absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 z-0"
+                style={{ backgroundImage: "url('/assets/banner3.jpg')" }}
+                >
+                    <div className="overlay">
+                    </div>
+                
+                    <div className="relative z-30 flex flex-col justify-center items-start h-full text-left px-6 md:px-20 container-banner-texto">
+                        <h1 className=" texto-banner">
+                            Capacitação que <span className="text-white">transforma</span> realidades
+                        </h1>
+                        <p className="p-banner ">
+                            Promovemos fé, amor e inclusão por meio da educação, da arte e da inovação social. Juntos, criamos futuros.
+                        </p>
+                        <Link href="/contribua" className="botao-contribua ">
+                            Apoie essa causa
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Controles */}
+                {/* Botão anterior (esquerda) */}
+                {/* <button
+                onClick={() => changeSlide(-1)}
+                aria-label="Slide anterior"
+                className="absolute inset-y-0 left-0 flex items-center justify-center px-4 z-50 bg-black/30 hover:bg-black/50 text-white transition"
+                >
+                <span className="text-4xl select-none">‹</span>
+                </button> */}
+
+                {/* Botão próximo (direita) */}
+                {/* <button
+                onClick={() => changeSlide(1)}
+                aria-label="Próximo slide"
+                className="absolute inset-y-0 right-0 flex items-center justify-center px-4 z-50 bg-black/30 hover:bg-black/50 text-white transition"
+                >
+                <span className="text-4xl select-none">›</span>
+                </button> */}
             </div>
-          </section>          
+          </section>         
         </main>
         <section className="contribua">
             <Image 
