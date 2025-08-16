@@ -280,18 +280,7 @@
   color: #2a2f4f;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .card-valores {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .valor {
-    width: 100%;
-    max-width: 100%;
-  }
-}
 
 /* MOBILE: Hero Section */
 @media (max-width: 768px) {
@@ -327,47 +316,52 @@
   }
 
   .container h1 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
 
   .container .descricao {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 /* MOBILE: .quem-somos section */
 @media (max-width: 768px) {
   .quem-somos h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .quem-somos .descricao {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0 10px;
   }
 
   .membro {
     max-width: 100%;
-    width: 90%;
+    width: 60%;
   }
 }
 
 /* MOBILE: .valores section */
 @media (max-width: 768px) {
+  .card-valores {
+    flex-direction: column;
+    align-items: center;
+  }
   .valores h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .valor {
     padding: 20px;
+    width: 620px;
   }
 
   .valor h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .valor p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 

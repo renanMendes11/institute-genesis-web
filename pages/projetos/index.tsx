@@ -1,6 +1,5 @@
 import Header from '@/components/header/header';
 import './styles.css'
-import '../../app/globals.css';
 import Footer from '@/components/footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect } from 'react';
