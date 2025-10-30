@@ -152,7 +152,7 @@ export default function Projetos(){
         < >
             <Header/>
             
-          <div className="container mt-5">
+          <div className="container mt-5 mb-5">
 
             <div className="d-block d-lg-none">
             <h2 className="mb-4">PROJETOS</h2>
