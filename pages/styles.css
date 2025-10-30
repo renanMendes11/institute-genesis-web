@@ -1,3 +1,29 @@
+.container-banner-texto {
+ margin-left: 50px;
+}
+
+.texto-banner {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.p-banner{
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.608);
+  z-index: 11;
+}
+
+
 .botao-contribua {
   display: inline-block;
   background-color: #2D3359;
@@ -254,15 +280,127 @@
   color: #2a2f4f;
 }
 
-/* Responsividade */
+
+
+/* MOBILE: Hero Section */
+@media (max-width: 768px) {
+  .hero .text-box {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}
+
+/* MOBILE: .contribua section */
+@media (max-width: 768px) {
+  .contribua {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner-contribua {
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .container .descricao {
+    font-size: 1.5rem;
+  }
+}
+
+/* MOBILE: .quem-somos section */
+@media (max-width: 768px) {
+  .quem-somos h2 {
+    font-size: 2.5rem;
+  }
+
+  .quem-somos .descricao {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .membro {
+    max-width: 100%;
+    width: 60%;
+  }
+}
+
+/* MOBILE: .valores section */
 @media (max-width: 768px) {
   .card-valores {
     flex-direction: column;
     align-items: center;
   }
+  .valores h2 {
+    font-size: 2.5rem;
+  }
 
   .valor {
-    width: 100%;
-    max-width: 100%;
+    padding: 20px;
+    width: 620px;
+  }
+
+  .valor h3 {
+    font-size: 1.5rem;
+  }
+
+  .valor p {
+    font-size: 1rem;
   }
 }
+
+/* MOBILE: .galeria section */
+@media (max-width: 768px) {
+  .galeria h2 {
+    font-size: 2rem;
+  }
+
+  .grid-fotos {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .grid-fotos img {
+    height: auto;
+  }
+}
+
+/* Extra pequeno (<= 480px) */
+@media (max-width: 480px) {
+  .botao-contribua {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .container h1 {
+    font-size: 1.4rem;
+  }
+
+  .valor {
+    padding: 15px;
+  }
+
+  .quem-somos,
+  .valores,
+  .galeria,
+  .contribua {
+    padding: 40px 10px;
+  }
+}
+

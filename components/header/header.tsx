@@ -28,16 +28,16 @@ export default function Header() {
           </Link>
             
       </div>
-        <div className="nav-container" onClick={handleMenuToggle}>
-            <button className="menu-toggle" aria-label="Abrir menu">☰</button>
-            <nav className="nav">
-              <ul>
-                  <li><a href="./quem-somos">Quem somos</a></li>
-                  <li><a href="./projetos">Projetos</a></li>
-                  <li><a href="./contribua">Contribua</a></li>
-            </ul>
-            </nav>
-        </div>
+      <div className="nav-container" onClick={handleMenuToggle}>
+          <button className="menu-toggle" aria-label="Abrir menu">☰</button>
+          <nav className="nav">
+            <ul>
+                <li><a href="./quem-somos">Quem somos</a></li>
+                <li><a href="./projetos">Projetos</a></li>
+                <li><a href="./contribua">Contribua</a></li>
+          </ul>
+          </nav>
+      </div>
     </header>
   );
 }
