@@ -149,7 +149,7 @@ const [slideIndex, setSlideIndex] = useState(0);
 
           <section className="quem-somos">
             <div className="quem-somos-container">
-              <h2>Quem Somos</h2>
+              <h2>Nossos projetos</h2>
               <p className="descricao">
                 Somos uma organização comprometida com a transformação social através do acolhimento, educação e fé. Atuamos em comunidades locais oferecendo apoio a crianças, adolescentes e famílias.
               </p>
@@ -157,35 +157,34 @@ const [slideIndex, setSlideIndex] = useState(0);
               <div className="equipe">
                 <div className="membro">
                   <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>João Silva</h3>
-                  <p>Fundador</p>
+                  <h3>Escola de Futebol</h3>
                 </div>
                 <div className="membro">
-                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>Maria Santos</h3>
-                  <p>Coordenadora</p>
+                  <Image src="/assets/equipe/gt.jpg" alt="Nome da pessoa" width={200} height={200} />
+                  <h3>Genêsis Tech</h3>
                 </div>
 
                 <div className="membro">
                   <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>João Silva</h3>
-                  <p>Fundador</p>
+                  <h3>Rede de cuidado</h3>
+                  
                 </div>
                 <div className="membro">
                   <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>Maria Santos</h3>
-                  <p>Coordenadora</p>
+                  <h3>Entendes o que lês?</h3>
                 </div>
 
                 <div className="membro">
                   <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>João Silva</h3>
-                  <p>Fundador</p>
+                  <h3>Ballet</h3>
                 </div>
                 <div className="membro">
                   <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>Maria Santos</h3>
-                  <p>Coordenadora</p>
+                  <h3>Ginástica Rítmica</h3>
+                </div>
+                <div className="membro">
+                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
+                  <h3>Educar Transforma</h3>
                 </div>
               </div>
             </div>
