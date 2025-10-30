@@ -20,16 +20,6 @@ const [slideIndex, setSlideIndex] = useState(0);
     });
   };
 
-  // Função para trocar de slide com botão
-  const changeSlide = (delta: number) => {
-    const slides = slidesRef.current;
-    if (!slides) return;
-    const total = slides.length;
-    const newIndex = (slideIndex + delta + total) % total;
-    setSlideIndex(newIndex);
-    showSlide(newIndex);
-  };
-
   // Intervalo automático de troca de slides
   useEffect(() => {
     slidesRef.current = document.querySelectorAll<HTMLElement>(".slide");
