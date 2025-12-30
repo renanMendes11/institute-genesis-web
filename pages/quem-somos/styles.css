@@ -1,0 +1,421 @@
+/* Página Quem Somos - Estilos Gerais */
+.quem-somos-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero Section */
+.hero-quem-somos {
+  position: relative;
+  height: 450px;
+  background: linear-gradient(135deg, #2D3359 0%, #700202 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero-quem-somos h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-quem-somos p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Container Geral */
+.container-quem-somos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.container-quem-somos h2 {
+  font-size: 2.8rem;
+  color: #2D3359;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Nossa História */
+.nossa-historia {
+  background-color: white;
+}
+
+.historia-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.historia-content p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* Missão, Visão e Valores */
+.missao-visao-valores {
+  background: linear-gradient(135deg, #f9f9f9 0%, #e8e8e8 100%);
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.mvv-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid #700202;
+}
+
+.mvv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mvv-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mvv-card h3 {
+  font-size: 1.8rem;
+  color: #2D3359;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.mvv-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: center;
+}
+
+.valores-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.valores-lista li {
+  padding: 10px 0;
+  color: #555;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.valores-lista li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #700202;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* O Que Fazemos */
+.o-que-fazemos {
+  background-color: white;
+}
+
+.intro-fazemos {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+.areas-atuacao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.area-card {
+  background: linear-gradient(135deg, #2D3359 0%, #1f243f 100%);
+  color: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.area-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.area-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Números de Impacto */
+.numeros-impacto {
+  background: linear-gradient(135deg, #700202 0%, #500101 100%);
+  color: white;
+}
+
+.numeros-impacto h2 {
+  color: white;
+}
+
+.numeros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.numero-card {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.numero-card:hover {
+  transform: translateY(-5px);
+}
+
+.numero {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #f5b921;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.numero-card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Equipe */
+.equipe {
+  background-color: #f9f9f9;
+}
+
+.intro-equipe {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.equipe-destaque {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  border-left: 5px solid #2D3359;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.texto-equipe {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+/* Parceiros */
+.parceiros {
+  background-color: white;
+}
+
+.intro-parceiros {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+.agradecimento {
+  max-width: 700px;
+  margin: 40px auto 0;
+  background: linear-gradient(135deg, #2D3359 0%, #1f243f 100%);
+  color: white;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.agradecimento p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* CTA Conheça Projetos */
+.cta-conheca {
+  background: linear-gradient(135deg, #f9f9f9 0%, #e8e8e8 100%);
+}
+
+.cta-box {
+  text-align: center;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-box h2 {
+  color: #2D3359;
+  margin-bottom: 20px;
+}
+
+.cta-box p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.btn-projetos {
+  display: inline-block;
+  background: linear-gradient(135deg, #700202 0%, #500101 100%);
+  color: white;
+  padding: 16px 45px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(112, 2, 2, 0.3);
+}
+
+.btn-projetos:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(112, 2, 2, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-quem-somos h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-quem-somos p {
+    font-size: 1.2rem;
+  }
+
+  .container-quem-somos {
+    padding: 50px 15px;
+  }
+
+  .container-quem-somos h2 {
+    font-size: 2.2rem;
+  }
+
+  .mvv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .areas-atuacao {
+    grid-template-columns: 1fr;
+  }
+
+  .numeros-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .historia-content p {
+    text-align: left;
+  }
+
+  .equipe-destaque {
+    padding: 25px;
+  }
+
+  .texto-equipe {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-quem-somos {
+    height: 350px;
+  }
+
+  .hero-quem-somos h1 {
+    font-size: 2rem;
+  }
+
+  .hero-quem-somos p {
+    font-size: 1.1rem;
+  }
+
+  .container-quem-somos h2 {
+    font-size: 1.9rem;
+  }
+
+  .mvv-card {
+    padding: 30px 20px;
+  }
+
+  .numeros-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .numero {
+    font-size: 3rem;
+  }
+
+  .cta-box {
+    padding: 40px 25px;
+  }
+
+  .btn-projetos {
+    padding: 14px 35px;
+    font-size: 1.1rem;
+  }
+}

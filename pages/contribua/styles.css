@@ -1,0 +1,395 @@
+/* Hero Section */
+.contribua-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-contribua {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(135deg, #2D3359 0%, #700202 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-contribua h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-contribua p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Container */
+.container-contribua {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.container-contribua h2 {
+  font-size: 2.5rem;
+  color: #2D3359;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Como Contribuir Section */
+.como-contribuir {
+  background-color: #f9f9f9;
+}
+
+.contribuicao-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card-contribuicao {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-contribuicao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.card-contribuicao h3 {
+  font-size: 1.5rem;
+  color: #2D3359;
+  margin-bottom: 15px;
+}
+
+.card-contribuicao p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.valores-sugeridos {
+  margin-top: 20px;
+}
+
+.valores-sugeridos p {
+  margin-bottom: 10px;
+  color: #2D3359;
+}
+
+.valor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.valor-tags span {
+  background-color: #2D3359;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.lista-materiais {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.lista-materiais li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+}
+
+.lista-materiais li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #700202;
+  font-weight: bold;
+}
+
+.destaque-voluntario {
+  background-color: #fff3cd;
+  border-left: 4px solid #700202;
+  padding: 15px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2D3359;
+}
+
+/* Formas de Doação */
+.formas-doacao {
+  background-color: white;
+}
+
+.metodos-doacao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.metodo-item {
+  background: #f9f9f9;
+  padding: 35px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+}
+
+.metodo-item h3 {
+  font-size: 1.5rem;
+  color: #2D3359;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pix-box {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+  border: 2px dashed #2D3359;
+}
+
+.pix-key {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2D3359;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.btn-copiar-pix {
+  background-color: #700202;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-copiar-pix:hover {
+  background-color: #500101;
+}
+
+.razao-social {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.dados-bancarios {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.dados-bancarios p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.dados-bancarios strong {
+  color: #2D3359;
+}
+
+/* Impacto Section */
+.impacto {
+  background: linear-gradient(135deg, #2D3359 0%, #1f243f 100%);
+  color: white;
+}
+
+.impacto h2 {
+  color: white;
+}
+
+.impacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.impacto-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.impacto-numero {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f5b921;
+  margin-bottom: 15px;
+}
+
+.impacto-item p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Transparência */
+.transparencia {
+  background-color: #f9f9f9;
+}
+
+.texto-transparencia {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.certificacao {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #2D3359;
+}
+
+.certificacao p {
+  margin: 10px 0;
+  color: #2D3359;
+  font-size: 1.05rem;
+}
+
+/* Contato Final */
+.contato-doacao {
+  background-color: white;
+}
+
+.cta-final {
+  text-align: center;
+  background: linear-gradient(135deg, #700202 0%, #500101 100%);
+  color: white;
+  padding: 60px 40px;
+  border-radius: 16px;
+}
+
+.cta-final h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.cta-final > p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contatos {
+  margin-top: 25px;
+}
+
+.contatos p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-contribua h1 {
+    font-size: 2rem;
+  }
+
+  .hero-contribua p {
+    font-size: 1.1rem;
+  }
+
+  .container-contribua h2 {
+    font-size: 2rem;
+  }
+
+  .contribuicao-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .metodos-doacao {
+    grid-template-columns: 1fr;
+  }
+
+  .impacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .valor-tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-contribua {
+    height: 300px;
+  }
+
+  .hero-contribua h1 {
+    font-size: 1.8rem;
+  }
+
+  .container-contribua {
+    padding: 40px 15px;
+  }
+
+  .card-contribuicao {
+    padding: 25px 20px;
+  }
+
+  .metodo-item {
+    padding: 25px 20px;
+  }
+}

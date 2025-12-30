@@ -8,6 +8,16 @@ export default function Projetos(){
 
 
     const [activeContent, setActiveContent] = useState("escolaballet");
+    const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
+
+    const toggleAccordion = (id: string, content: string) => {
+      if (activeAccordion === id) {
+        setActiveAccordion(null);
+      } else {
+        setActiveAccordion(id);
+        setActiveContent(content);
+      }
+    };
 
   const renderContent = () => {
     switch (activeContent) {
@@ -160,22 +170,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseOne' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseOne', "escolaballet")}
+                    aria-expanded={activeAccordion === 'collapseOne'}
                     aria-controls="collapseOne"
-                    onClick={() => setActiveContent("escolaballet")}
                     >
                     Escola de Ballet
                     </button>
                 </h2>
                 <div
                     id="collapseOne"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseOne' ? 'show' : ''}`}
                     aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                     {renderContent()}
@@ -186,22 +193,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingTwo">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseTwo' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseTwo', "banco")}
+                    aria-expanded={activeAccordion === 'collapseTwo'}
                     aria-controls="collapseTwo"
-                    onClick={() => setActiveContent("banco")}
                     >
                     Banco de Alimentos
                     </button>
                 </h2>
                 <div
                     id="collapseTwo"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseTwo' ? 'show' : ''}`}
                     aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                     {renderContent()}
@@ -212,22 +216,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingTres">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseTres' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTres"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseTres', "educartransforma")}
+                    aria-expanded={activeAccordion === 'collapseTres'}
                     aria-controls="collapseTres"
-                    onClick={() => setActiveContent("educartransforma")}
                     >
                     Educar Transforma
                     </button>
                 </h2>
                 <div
                     id="collapseTres"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseTres' ? 'show' : ''}`}
                     aria-labelledby="headingTres"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                         {renderContent()}
@@ -238,22 +239,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingQuatro">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseQuatro' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseQuatro"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseQuatro', "entendes")}
+                    aria-expanded={activeAccordion === 'collapseQuatro'}
                     aria-controls="collapseQuatro"
-                    onClick={() => setActiveContent("entendes")}
                     >
                     Entendes o que lês?
                     </button>
                 </h2>
                 <div
                     id="collapseQuatro"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseQuatro' ? 'show' : ''}`}
                     aria-labelledby="headingQuatro"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                         {renderContent()}
@@ -264,22 +262,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingCinco">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseCinco' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseCinco"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseCinco', "escoladefut")}
+                    aria-expanded={activeAccordion === 'collapseCinco'}
                     aria-controls="collapseCinco"
-                    onClick={() => setActiveContent("escoladefut")}
                     >
                     Escola de Futebol
                     </button>
                 </h2>
                 <div
                     id="collapseCinco"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseCinco' ? 'show' : ''}`}
                     aria-labelledby="headingCinco"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                         {renderContent()}
@@ -290,22 +285,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingSeis">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseSeis' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeis"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseSeis', "genesistech")}
+                    aria-expanded={activeAccordion === 'collapseSeis'}
                     aria-controls="collapseSeis"
-                    onClick={() => setActiveContent("genesistech")}
                     >
                     Gênesis Tech
                     </button>
                 </h2>
                 <div
                     id="collapseSeis"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseSeis' ? 'show' : ''}`}
                     aria-labelledby="headingSeis"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                         {renderContent()}
@@ -316,22 +308,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingSete">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseSete' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSete"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseSete', "ginastica")}
+                    aria-expanded={activeAccordion === 'collapseSete'}
                     aria-controls="collapseSete"
-                    onClick={() => setActiveContent("ginastica")}
                     >
-                    Ginástica Rítimca
+                    Ginástica Rítmica
                     </button>
                 </h2>
                 <div
                     id="collapseSete"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseSete' ? 'show' : ''}`}
                     aria-labelledby="headingSete"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                         {renderContent()}
@@ -342,22 +331,19 @@ export default function Projetos(){
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOito">
                     <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${activeAccordion === 'collapseOito' ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOito"
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion('collapseOito', "rededecuidado")}
+                    aria-expanded={activeAccordion === 'collapseOito'}
                     aria-controls="collapseOito"
-                    onClick={() => setActiveContent("rededecuidado")}
                     >
                     Rede de Cuidado
                     </button>
                 </h2>
                 <div
                     id="collapseOito"
-                    className="accordion-collapse collapse"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseOito' ? 'show' : ''}`}
                     aria-labelledby="headingOito"
-                    data-bs-parent="#accordionExample"
                 >
                     <div className="accordion-body">
                         {renderContent()}

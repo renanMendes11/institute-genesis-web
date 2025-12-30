@@ -26,22 +26,24 @@
 
 .botao-contribua {
   display: inline-block;
-  background-color: #2D3359;
+  background: linear-gradient(135deg, #700202 0%, #500101 100%);
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.3rem;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(112, 2, 2, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .botao-contribua:hover {
-  background-color: #1f243f; /* tom mais escuro para hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(112, 2, 2, 0.4);
 }
 
 .botao-contribua:focus {
-  outline: 3px solid rgba(45, 51, 89, 0.5);
+  outline: 3px solid rgba(112, 2, 2, 0.5);
   outline-offset: 3px;
 }
 
@@ -54,6 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #f9f9f9;
 }
 
 
@@ -68,14 +71,16 @@
 
 .container h1 {
   font-size: 30px;
-  color: #2c3e50;
+  color: #2D3359;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .container .descricao {
   font-size: 19px;
   font-weight: 560;
   margin-bottom: 30px;
+  color: #555;
 }
 
 .progresso-container {
@@ -89,7 +94,7 @@
 
 .progresso-barra {
   height: 100%;
-  background-color: #1f243f;
+  background: linear-gradient(135deg, #700202 0%, #500101 100%);
   width: 3%;
   transition: width 1s ease-in-out;
 }
@@ -97,12 +102,12 @@
 .porcentagem {
   font-size: 20px;
   font-weight: bold;
-  color: #1f243f;
+  color: #700202;
 }
 
 
 .quem-somos {
-  background-color: #1f243f;
+  background: linear-gradient(135deg, #2D3359 0%, #1f243f 100%);
   color: #e0e0e0;
   padding: 80px 20px;
   text-align: center;
@@ -115,8 +120,9 @@
 
 .quem-somos h2 {
   font-size: 2.5rem;
-  color: #e0e0e0;
+  color: #ffffff;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .quem-somos .descricao {
@@ -135,11 +141,12 @@
 }
 
 .membro {
-  background-color: #2a2f4f;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 12px;
   max-width: 220px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .membro:hover {
@@ -151,12 +158,14 @@
   width: 100%;
   height: auto;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 .membro h3 {
   margin: 0;
   font-size: 1.1rem;
-  color: #e0e0e0;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .membro p {
@@ -175,7 +184,7 @@
 
 
 .galeria {
-  background-color: #e0e0e0;
+  background-color: #e8e8e8;
   color: #2a2f4f;
   padding: 80px 20px;
   text-align: center;
@@ -189,7 +198,8 @@
 .galeria h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #700202; /* vermelho escuro */
+  color: #2D3359;
+  font-weight: 700;
 }
 
 .grid-fotos {
@@ -208,9 +218,8 @@
 }
 
 .grid-fotos img:hover {
-  transform: scale(1);
-  /* border-color: #8B0000; */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsividade extra */
@@ -222,7 +231,7 @@
 
 
 .valores {
-  background-color: #700202;
+  background: linear-gradient(135deg, #700202 0%, #500101 100%);
   color: #e0e0e0;
   padding: 80px 20px;
   text-align: center;
@@ -235,8 +244,9 @@
 
 .valores h2 {
   font-size: 2.5rem;
-  color: #e0e0e0;
+  color: #ffffff;
   margin-bottom: 50px;
+  font-weight: 700;
 }
 
 .card-valores {
@@ -247,8 +257,8 @@
 }
 
 .valor {
-  background-color: #e0e0e0;
-  border-left: 5px solid #2a2f4f;
+  background-color: #ffffff;
+  border-left: 5px solid #f5b921;
   border-radius: 10px;
   padding: 30px 20px;
   max-width: 320px;
@@ -258,12 +268,12 @@
 
 .valor:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .valor .icone {
   font-size: 2rem;
-  color: #3c0000;
+  color: #700202;
   display: inline-block;
   margin-bottom: 15px;
 }
@@ -271,13 +281,14 @@
 .valor h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #2a2f4f;
+  color: #2D3359;
+  font-weight: 700;
 }
 
 .valor p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #2a2f4f;
+  color: #555;
 }
 
 
