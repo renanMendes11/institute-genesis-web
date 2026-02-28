@@ -29,7 +29,7 @@ export default function Footer() {
     </div>
 
     <div className="footer-bottom">
-      <p>&copy; 2025 Instituto Gênesis. Todos os direitos reservados.</p>
+      <p>&copy; {new Date().getFullYear()} Instituto Gênesis. Todos os direitos reservados.</p>
     </div>
 </footer>
 

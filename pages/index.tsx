@@ -139,44 +139,55 @@ const [slideIndex, setSlideIndex] = useState(0);
 
           <section className="quem-somos">
             <div className="quem-somos-container">
-              <h2>Nossos projetos</h2>
+              <h2>Nossos Projetos</h2>
               <p className="descricao">
-                Somos uma organização comprometida com a transformação social através do acolhimento, educação e fé. Atuamos em comunidades locais oferecendo apoio a crianças, adolescentes e famílias.
+                Atuamos em diversas frentes para promover o desenvolvimento integral de crianças, adolescentes e famílias em João Pessoa.
               </p>
 
-              <div className="equipe">
-                <div className="membro">
-                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
+              <div className="projetos-grid">
+                <div className="projeto-card">
+                  <div className="projeto-icone">⚽</div>
                   <h3>Escola de Futebol</h3>
+                  <p>Formação de caráter e valores através do futebol para crianças e adolescentes de baixa renda.</p>
                 </div>
-                <div className="membro">
-                  <Image src="/assets/equipe/gt.jpg" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>Genêsis Tech</h3>
+                <div className="projeto-card">
+                  <div className="projeto-icone">💻</div>
+                  <h3>Gênesis Tech</h3>
+                  <p>Curso de iniciação à programação para adolescentes e jovens, abrindo portas para o mercado de tecnologia.</p>
                 </div>
-
-                <div className="membro">
-                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>Rede de cuidado</h3>
-                  
+                <div className="projeto-card">
+                  <div className="projeto-icone">🩺</div>
+                  <h3>Rede de Cuidado</h3>
+                  <p>Sessões de fisioterapia e terapia psicológica para a comunidade, cuidando da saúde física e emocional.</p>
                 </div>
-                <div className="membro">
-                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
+                <div className="projeto-card">
+                  <div className="projeto-icone">📖</div>
                   <h3>Entendes o que lês?</h3>
+                  <p>Aulas de português para jovens africanos residentes em João Pessoa, preparando-os para o Celpe-Bras.</p>
                 </div>
-
-                <div className="membro">
-                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
-                  <h3>Ballet</h3>
+                <div className="projeto-card">
+                  <div className="projeto-icone">🩰</div>
+                  <h3>Escola de Ballet</h3>
+                  <p>Aulas de dança que desenvolvem disciplina, autoestima e o potencial de meninas de baixa renda.</p>
                 </div>
-                <div className="membro">
-                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
+                <div className="projeto-card">
+                  <div className="projeto-icone">🤸</div>
                   <h3>Ginástica Rítmica</h3>
+                  <p>Desenvolvimento físico, relacional e autoestima para meninas por meio da ginástica rítmica.</p>
                 </div>
-                <div className="membro">
-                  <Image src="/assets/equipe/ef.png" alt="Nome da pessoa" width={200} height={200} />
+                <div className="projeto-card">
+                  <div className="projeto-icone">🎓</div>
                   <h3>Educar Transforma</h3>
+                  <p>Curso preparatório para o ENEM voltado a alunos de escola pública, abrindo portas para o ensino superior.</p>
+                </div>
+                <div className="projeto-card">
+                  <div className="projeto-icone">🌾</div>
+                  <h3>Banco de Alimentos</h3>
+                  <p>Distribuição mensal de cestas básicas para famílias de baixa renda, combatendo a insegurança alimentar.</p>
                 </div>
               </div>
+
+              <Link href="/projetos" className="btn-ver-projetos">Conheça todos os projetos</Link>
             </div>
           </section>
 

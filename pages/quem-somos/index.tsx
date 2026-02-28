@@ -22,20 +22,46 @@ export default function QuemSomos(){
                         <h2>Nossa História</h2>
                         <div className="historia-content">
                             <p>
-                                O Instituto Gênesis de Ensino e Cultura nasceu do sonho de transformar vidas através da educação, 
-                                da cultura e do acolhimento social. Fundado em 2020, em João Pessoa - Paraíba, nosso instituto surge 
-                                como resposta a uma necessidade urgente: oferecer oportunidades reais de desenvolvimento para crianças, 
-                                adolescentes e famílias em situação de vulnerabilidade social.
+                                Há 102 anos, a Igreja Evangélica Batista de João Pessoa tem consistentemente empreendido iniciativas 
+                                que demonstram o amor e a compaixão de Deus pela humanidade materializados na vida e nos ensinamentos 
+                                do Senhor Jesus. Por meio da fidelidade de seus membros, ao longo de mais de um século, os esforços 
+                                da IEBJP têm sido usados por Deus para alcançar e restaurar a vida de indivíduos e famílias, desde 
+                                a linda João Pessoa, até os lugares mais remotos do mundo.
                             </p>
                             <p>
-                                Inspirados pelos valores cristãos de amor, solidariedade e justiça social, iniciamos nossa jornada 
-                                com o Banco de Alimentos, levando segurança alimentar a dezenas de famílias. Desde então, expandimos 
-                                nossas ações para diversas áreas, sempre com o objetivo de promover transformação integral e duradoura.
+                                No ano de 2007, em um desafio de fé, a igreja adquiriu um amplo terreno situado no bairro de 
+                                Jaguaribe, em João Pessoa, com o propósito de construir um novo templo, maior e mais confortável 
+                                para melhor acolher seus membros e visitantes nos momentos de culto. Contudo, em harmonia com sua 
+                                notável tradição e honrando seu legado centenário, ao identificar necessidades da comunidade na qual 
+                                está situada e ao perceber a oportunidade de responder a tais necessidades, em 2018, a IEB tomou uma 
+                                decisão que revolucionaria a atuação da igreja em seu contexto local e que, ao longo dos anos, 
+                                manifestaria o Evangelho do Reino de Deus a crianças, adolescentes e famílias: em vez de edificar 
+                                um novo local de culto, a IEB construiria um centro de acolhimento, educação, profissionalização e 
+                                lazer destinado ao serviço à comunidade local e ao anúncio inteligível da mensagem do Evangelho a 
+                                todo o público atendido pelos programas oferecidos.
                             </p>
                             <p>
-                                Hoje, somos mais do que uma organização social. Somos uma família comprometida em construir futuros, 
-                                despertar talentos e oferecer esperança. Cada projeto, cada iniciativa, cada vida tocada é parte de 
-                                um sonho maior: ver comunidades inteiras transformadas pelo poder da educação e do amor.
+                                Nasceu, assim, o Instituto Gênesis. Resultado da contribuição voluntária de uma dedicada equipe 
+                                multidisciplinar, o projeto do Instituto prevê a construção de uma arena poliesportiva coberta 
+                                (para prática de esportes coletivos, artes marciais e apresentações artísticas), um campo de 
+                                Futebol de 7 com gramado sintético, salas de aula, espaços de atenção à saúde e uma estrutura 
+                                para abrigar iniciativas de empreendedorismo e negócios.
+                            </p>
+                            <p>
+                                Por meio das escolas de diferentes modalidades esportivas, do ensino de idiomas, música e outras 
+                                habilidades, de cursos profissionalizantes e da disponibilização de acesso a serviços de saúde 
+                                física, mental e emocional, o Instituto Gênesis visa promover ações de desenvolvimento integral 
+                                por meio da capacitação de indivíduos com criatividade, excelência e mentalidade empreendedora, 
+                                valores que têm permeado a cosmovisão cristã por quase dois mil anos.
+                            </p>
+                            <p>
+                                Em 2025, iniciamos a campanha de levantamento de recursos para construção da sede do Instituto 
+                                Gênesis, e queremos estender a você a oportunidade de investir na concretização desse sonho. 
+                                Sua participação pode fazer grande diferença nesta iniciativa que, temos certeza, será um 
+                                instrumento nas mãos de Deus para dar novos rumos às vidas de muita gente. Junte-se a nós!
+                            </p>
+                            <p className="historia-slogan">
+                                Instituto Gênesis, lugar de novos começos.
                             </p>
                         </div>
                     </div>
@@ -48,30 +74,28 @@ export default function QuemSomos(){
                                 <div className="mvv-icon">🎯</div>
                                 <h3>Missão</h3>
                                 <p>
-                                    Promover o desenvolvimento integral de crianças, adolescentes e famílias em situação de 
-                                    vulnerabilidade social, através de projetos educacionais, culturais, esportivos e de assistência, 
-                                    fundamentados nos princípios cristãos de amor, fé e serviço ao próximo.
+                                    Promover ações de desenvolvimento integrais, por meio da mobilização e capacitação do indivíduo com excelência, criatividade e mentalidade empreendedora, fundamentadas na cosmovisão cristã.
                                 </p>
                             </div>
                             <div className="mvv-card">
                                 <div className="mvv-icon">🌟</div>
                                 <h3>Visão</h3>
                                 <p>
-                                    Ser referência em transformação social na Paraíba, reconhecidos pela excelência de nossos 
-                                    projetos e pelo impacto positivo e duradouro na vida das pessoas e comunidades que servimos, 
-                                    contribuindo para uma sociedade mais justa, educada e solidária.
+                                    Ser uma organização referência em desenvolvimento humano integral, segundo a cosmovisão bíblica, na cidade de João pessoa.
                                 </p>
                             </div>
-                            <div className="mvv-card">
+                            <div className="mvv-card mvv-card-valores">
                                 <div className="mvv-icon">❤️</div>
                                 <h3>Valores</h3>
                                 <ul className="valores-lista">
-                                    <li>Amor e Compaixao</li>
-                                    <li>Integridade e Transparência</li>
-                                    <li>Compromisso com a Excelência</li>
-                                    <li>Respeito e Inclusão</li>
-                                    <li>Fé e Esperança</li>
-                                    <li>Trabalho em Equipe</li>
+                                    <li><strong>Desenvolvimento de identidade empreendedora:</strong> Porque acreditamos que a construção de uma mentalidade criativa, capaz de traduzir demandas e trazer soluções, de liderar e com poder de decisão é fundamental para uma formação plena.</li>
+                                    <li><strong>Compromisso com a integralidade do indivíduo:</strong> Porque acreditamos que todo o indivíduo possui talentos, identidade, capacidade relacional e espiritualidade e que o bom entendimento destes é capaz de transformar seu status quo em oportunidades para seu processo de autenticidade humano.</li>
+                                    <li><strong>Inovação:</strong> Porque acreditamos que realizar entregas comuns em um contexto social, econômico, político e espiritual cada vez mais competitivo, exigente e polarizado não é o suficiente.</li>
+                                    <li><strong>Excelência nos processos:</strong> Porque acreditamos que a construção e a execução de processos precisam ser tratadas com o melhor de nossos esforços, talentos, habilidades e competências.</li>
+                                    <li><strong>Compromisso com o Evangelho do Reino de Deus:</strong> Porque acreditamos que o melhor de nós está em Deus e o compartilhamento e a mordomia são uma tarefa primordial para a manutenção plena do Seu Reino aqui neste mundo.</li>
+                                    <li><strong>Ética e Transparência:</strong> Porque confiamos que a ética e a transparência serão diretrizes fundamentais para um processo de sustentabilidade ideológico, de fundamentação do caráter empresarial e da aceitação e fidelidade de nossos stakeholders e clientes.</li>
+                                    <li><strong>Integridade nas relações:</strong> Porque acreditamos que todas as relações envolvidas serão tratadas com: retidão, generosidade, respeito, dignidade, responsabilidade e livres de corrupção, má conduta, injustiça e desprezo.</li>
+                                    <li><strong>Paixão:</strong> Paixão por quem nos faz existir e por toda obra que Ele nos capacita para fazer.</li>
                                 </ul>
                             </div>
                         </div>

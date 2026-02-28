@@ -75,9 +75,9 @@ export default function Contribua(){
                         
                         <div className="metodos-doacao">
                             <div className="metodo-item">
-                                <h3>PIX (CNPJ)</h3>
+                                <h3>PIX (EMAIL)</h3>
                                 <div className="pix-box">
-                                    <p className="pix-key">41.505.753/0001-82</p>
+                                    <p className="pix-key">genesis@iebjp.com.br</p>
                                     <button 
                                         className="btn-copiar-pix" 
                                         onClick={handleCopyPix}
@@ -85,7 +85,7 @@ export default function Contribua(){
                                         {copiedPix ? '✓ Copiado!' : 'Copiar Chave PIX'}
                                     </button>
                                 </div>
-                                <p className="razao-social">Instituto Gênesis de Ensino e Cultura</p>
+                                <p className="razao-social">Instituto Gênesis</p>
                             </div>
 
                             <div className="metodo-item">
@@ -95,7 +95,7 @@ export default function Contribua(){
                                     <p><strong>Agência:</strong> 3427</p>
                                     <p><strong>Conta Corrente:</strong> 8314-2</p>
                                     <p><strong>CNPJ:</strong> 41.505.753/0001-82</p>
-                                    <p><strong>Razão Social:</strong> Instituto Gênesis de Ensino e Cultura</p>
+                                    <p><strong>Razão Social:</strong> Instituto Gênesis</p>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ export default function Contribua(){
                     </div>
                 </section>
 
-                <section className="transparencia">
+                {/* <section className="transparencia">
                     <div className="container-contribua">
                         <h2>Transparência e Prestação de Contas</h2>
                         <p className="texto-transparencia">
@@ -134,11 +134,11 @@ export default function Contribua(){
                             Periodicamente, publicamos relatórios detalhados sobre nossa atuação e aplicação dos recursos.
                         </p>
                         <div className="certificacao">
-                            <p><strong>CNPJ:</strong> 41.505.753/0001-82</p>
-                            <p><strong>Razão Social:</strong> Instituto Gênesis de Ensino e Cultura</p>
+                            <p><strong>CNPJ:</strong> 41.126.988/0001-17</p>
+                            <p><strong>Razão Social:</strong> Instituto Gênesis</p>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className="contato-doacao">
                     <div className="container-contribua">
