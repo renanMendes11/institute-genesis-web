@@ -18,14 +18,6 @@ export default function Contribua(){
         < >
             <Header/>
             <main className="contribua-page">
-                <section className="hero-contribua">
-                    <div className="hero-overlay"></div>
-                    <div className="hero-content">
-                        <h1>Faça Parte Dessa Transformação</h1>
-                        <p>Sua contribuição é essencial para mudarmos vidas através da educação, cultura e assistência social.</p>
-                    </div>
-                </section>
-
                 <section className="como-contribuir">
                     <div className="container-contribua">
                         <h2>Como Você Pode Ajudar</h2>
@@ -87,41 +79,6 @@ export default function Contribua(){
                                 </div>
                                 <p className="razao-social">Instituto Gênesis</p>
                             </div>
-
-                            <div className="metodo-item">
-                                <h3>Transferência Bancária</h3>
-                                <div className="dados-bancarios">
-                                    <p><strong>Banco:</strong> Bradesco</p>
-                                    <p><strong>Agência:</strong> 3427</p>
-                                    <p><strong>Conta Corrente:</strong> 8314-2</p>
-                                    <p><strong>CNPJ:</strong> 41.505.753/0001-82</p>
-                                    <p><strong>Razão Social:</strong> Instituto Gênesis</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="impacto">
-                    <div className="container-contribua">
-                        <h2>O Impacto da Sua Doação</h2>
-                        <div className="impacto-grid">
-                            <div className="impacto-item">
-                                <div className="impacto-numero">R$ 30</div>
-                                <p>Ajuda a custear materiais escolares para uma criança por um mês</p>
-                            </div>
-                            <div className="impacto-item">
-                                <div className="impacto-numero">R$ 60</div>
-                                <p>Contribui com uma cesta básica completa para uma família</p>
-                            </div>
-                            <div className="impacto-item">
-                                <div className="impacto-numero">R$ 100</div>
-                                <p>Garante uniforme e equipamento esportivo para um aluno</p>
-                            </div>
-                            <div className="impacto-item">
-                                <div className="impacto-numero">R$ 200</div>
-                                <p>Mantém um aluno em nossas aulas por um mês inteiro</p>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -146,8 +103,8 @@ export default function Contribua(){
                             <h2>Pronto para fazer a diferença?</h2>
                             <p>Entre em contato conosco para mais informações sobre como contribuir</p>
                             <div className="contatos">
-                                <p>📧 Email: contato@institutogenesispb.com.br</p>
-                                <p>📱 WhatsApp: (83) 98888-8888</p>
+                                <p>📧 Email: genesis@iebjp.com.br</p>
+                                <p>📱 WhatsApp: (83) 98185-2010</p>
                                 <p>📍 João Pessoa - PB</p>
                             </div>
                         </div>

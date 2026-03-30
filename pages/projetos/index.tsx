@@ -149,6 +149,12 @@ export default function Projetos(){
                     </div>
                 </div>
 
+               </div>;
+      case "jiujitsu":
+        return <div>
+                <h5 className='d-none d-lg-block' style={{ borderBottom: "1px solid #555", paddingBottom: 10}}>Jiu-Jitsu</h5>
+                <p>Inaugurado em XXXX, o projeto de Jiu Jitsu oferece semanalmente aulas para crianças e adolescentes de baixa renda. O projeto contribui para a formação do caráter dos alunos, ensinando valores como: disciplina, responsabilidade, compromisso, cidadania, respeito e gratidão. O Projeto de Jiu-jitsu representa para nós a construção de um sonho: ver a transformação na vida dos alunos pelo poder do Evangelho.</p>
+                <p><b>Alunos matriculados:</b> XX</p>
                </div>;   
       default:
         return <div>Selecione uma opção.</div>;
@@ -351,6 +357,29 @@ export default function Projetos(){
                 </div>
                 </div>
 
+                <div className="accordion-item">
+                <h2 className="accordion-header" id="headingNove">
+                    <button
+                    className={`accordion-button ${activeAccordion === 'collapseNove' ? '' : 'collapsed'}`}
+                    type="button"
+                    onClick={() => toggleAccordion('collapseNove', "jiujitsu")}
+                    aria-expanded={activeAccordion === 'collapseNove'}
+                    aria-controls="collapseNove"
+                    >
+                    Jiu-Jitsu
+                    </button>
+                </h2>
+                <div
+                    id="collapseNove"
+                    className={`accordion-collapse collapse ${activeAccordion === 'collapseNove' ? 'show' : ''}`}
+                    aria-labelledby="headingNove"
+                >
+                    <div className="accordion-body">
+                        {renderContent()}
+                    </div>
+                </div>
+                </div>
+
             </div>
             
     </div>
@@ -426,6 +455,14 @@ export default function Projetos(){
               onClick={() => setActiveContent("rededecuidado")}
             >
               Rede de Cuidado
+            </button>
+          </li>
+          <li className="nav-item d-flex justify-content-center">
+            <button
+              className={`nav-link btn btn-link text-start ${activeContent === "jiujitsu" ? "fw-bold" : ""}`}
+              onClick={() => setActiveContent("jiujitsu")}
+            >
+              Jiu-Jitsu
             </button>
           </li>
         </ul>

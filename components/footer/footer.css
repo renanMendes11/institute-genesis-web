@@ -34,8 +34,15 @@
 
 .footer-logo h2 {
   font-size: 26px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #f5b921; /* Destaque */
+}
+
+.footer-slogan {
+  font-size: 14px;
+  font-style: italic;
+  color: #f5b921;
+  margin-bottom: 10px;
 }
 
 .footer-logo p {

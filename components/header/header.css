@@ -67,7 +67,7 @@
 
 .nav a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   transition: color 0.3s;
   color: #2D3359;
 }
@@ -185,7 +185,7 @@
   }
 
   .nav a {
-    font-size: 18px;
+    font-size: 14px;
     
   }
 
@@ -220,7 +220,7 @@
 
   .nav a {
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   /* .hero .text-box {
@@ -242,7 +242,7 @@
 
   .nav a{
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   /* .hero .text-box {
@@ -263,7 +263,7 @@
 
   .nav a {
     margin-right: 10px;
-    font-size: 23px;
+    font-size: 18px;
   }
 
   /* .hero .text-box {
@@ -291,7 +291,7 @@
   
   .nav a {
     margin-right: 15px;
-    font-size: 26px;
+    font-size: 20px;
   }
 
   /* .hero .text-box {
@@ -318,7 +318,7 @@
 
 
   .nav a {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   /* .hero .text-box {

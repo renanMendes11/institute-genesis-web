@@ -449,3 +449,34 @@
   }
 }
 
+/* Video Campanha Section */
+.video-campanha {
+  background-color: #1f243f;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.video-campanha-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video-campanha h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.video-campanha video {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .video-campanha h2 {
+    font-size: 2rem;
+  }
+}
+

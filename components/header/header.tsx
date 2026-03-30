@@ -34,6 +34,7 @@ export default function Header() {
             <ul>
                 <li><a href="./quem-somos">Quem somos</a></li>
                 <li><a href="./projetos">Projetos</a></li>
+                <li><a href="./campanha">Campanha</a></li>
                 <li><a href="./contribua">Contribua</a></li>
           </ul>
           </nav>

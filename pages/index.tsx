@@ -40,6 +40,16 @@ const [slideIndex, setSlideIndex] = useState(0);
       <Header/>
       <>
         <main>
+          <section className="video-campanha">
+          <div className="video-campanha-container">
+            <h2>Campanha de Construção</h2>
+            <video controls width="100%" playsInline>
+              <source src="/assets/videos/genesisihavadream.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+        </section>
+        
           <section className="hero relative h-[800px] md:h-[900px] overflow-hidden">
             
             <div id="carousel" className="relative h-full w-full">
@@ -55,10 +65,10 @@ const [slideIndex, setSlideIndex] = useState(0);
                     
                     <div className="relative z-30 flex flex-col justify-center items-start h-full text-left px-6 ml-10 md:px-20 container-banner-texto">
                         <h1 className="texto-banner">
-                            Educação, acolhimento e oportunidades reais.
+                            Lugar de novos começos.
                         </h1>
                         <p className="p-banner">
-                            No Instituto Gênesis, nossa missão é transformar vidas através da fé, do cuidado e da inclusão.
+                            Promover ações de desenvolvimento integrais, por meio da mobilização e capacitação do indivíduo com excelência, criatividade e mentalidade empreendedora, fundamentadas na cosmovisão cristã.
                         </p>
                         <Link href="/contribua" className="botao-contribua">
                             Contribua com essa missão
@@ -76,10 +86,10 @@ const [slideIndex, setSlideIndex] = useState(0);
                 
                     <div className="relative z-30 flex flex-col justify-center items-start h-full text-left px-6 md:px-20 container-banner-texto">
                         <h1 className=" texto-banner">
-                            Capacitação que <span className="text-white">transforma</span> realidades
+                            Lugar de novos começos.
                         </h1>
                         <p className="p-banner ">
-                            Promovemos fé, amor e inclusão por meio da educação, da arte e da inovação social. Juntos, criamos futuros.
+                            Promover ações de desenvolvimento integrais, por meio da mobilização e capacitação do indivíduo com excelência, criatividade e mentalidade empreendedora, fundamentadas na cosmovisão cristã.
                         </p>
                         <Link href="/contribua" className="botao-contribua ">
                             Apoie essa causa
@@ -108,6 +118,9 @@ const [slideIndex, setSlideIndex] = useState(0);
             </div>
           </section>         
         </main>
+
+        
+
         <section className="contribua">
             <Image 
                 className="banner-contribua"
@@ -185,6 +198,11 @@ const [slideIndex, setSlideIndex] = useState(0);
                   <h3>Banco de Alimentos</h3>
                   <p>Distribuição mensal de cestas básicas para famílias de baixa renda, combatendo a insegurança alimentar.</p>
                 </div>
+                <div className="projeto-card">
+                  <div className="projeto-icone">🥋</div>
+                  <h3>Jiu-Jitsu</h3>
+                  <p>Aulas semanais para crianças e adolescentes de baixa renda, formando caráter com disciplina, respeito e gratidão.</p>
+                </div>
               </div>
 
               <Link href="/projetos" className="btn-ver-projetos">Conheça todos os projetos</Link>
@@ -195,22 +213,47 @@ const [slideIndex, setSlideIndex] = useState(0);
 
           <section className="valores">
             <div className="valores-container">
-              <h2>Nossos Princípios</h2>
+              <h2>Nossos Valores</h2>
               <div className="card-valores">
                 <div className="valor">
-                  <span className="icone">💖</span>
-                  <h3>Amor ao Próximo</h3>
-                  <p>Promovemos relações baseadas no respeito, cuidado e empatia com todos ao nosso redor.</p>
+                  <span className="icone">🚀</span>
+                  <h3>Identidade Empreendedora</h3>
+                  <p>Construção de uma mentalidade criativa, capaz de traduzir demandas e trazer soluções, de liderar e com poder de decisão.</p>
                 </div>
                 <div className="valor">
-                  <span className="icone">📘</span>
-                  <h3>Educação Transformadora</h3>
-                  <p>Acreditamos na educação como ferramenta essencial para libertação e mudança social.</p>
+                  <span className="icone">🧩</span>
+                  <h3>Integralidade do Indivíduo</h3>
+                  <p>Todo indivíduo possui talentos, identidade, capacidade relacional e espiritualidade para transformar seu contexto.</p>
                 </div>
                 <div className="valor">
-                  <span className="icone">🕊️</span>
-                  <h3>Fé que Move</h3>
-                  <p>Nosso trabalho é sustentado pela fé cristã, que nos inspira a servir e transformar.</p>
+                  <span className="icone">💡</span>
+                  <h3>Inovação</h3>
+                  <p>Realizar entregas que se destaquem em um contexto social, econômico e espiritual cada vez mais exigente.</p>
+                </div>
+                <div className="valor">
+                  <span className="icone">⭐</span>
+                  <h3>Excelência nos Processos</h3>
+                  <p>Construção e execução de processos com o melhor de nossos esforços, talentos, habilidades e competências.</p>
+                </div>
+                <div className="valor">
+                  <span className="icone">✝️</span>
+                  <h3>Compromisso com o Evangelho</h3>
+                  <p>O melhor de nós está em Deus e o compartilhamento é tarefa primordial para a manutenção do Seu Reino.</p>
+                </div>
+                <div className="valor">
+                  <span className="icone">🔍</span>
+                  <h3>Ética e Transparência</h3>
+                  <p>Diretrizes fundamentais para sustentabilidade, fundamentação do caráter e fidelidade de nossos stakeholders.</p>
+                </div>
+                <div className="valor">
+                  <span className="icone">🤝</span>
+                  <h3>Integridade nas Relações</h3>
+                  <p>Relações tratadas com retidão, generosidade, respeito, dignidade, responsabilidade e livres de corrupção.</p>
+                </div>
+                <div className="valor">
+                  <span className="icone">❤️‍🔥</span>
+                  <h3>Paixão</h3>
+                  <p>Paixão por quem nos faz existir e por toda obra que Ele nos capacita para fazer.</p>
                 </div>
               </div>
             </div>

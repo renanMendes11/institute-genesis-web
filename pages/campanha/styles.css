@@ -1,0 +1,236 @@
+/* Hero Section */
+.campanha-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-campanha {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(135deg, #2D3359 0%, #700202 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-campanha .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-campanha .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-campanha h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-campanha p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Container */
+.container-campanha {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.container-campanha h2 {
+  font-size: 2.5rem;
+  color: #2D3359;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Video Maquete */
+.video-maquete {
+  background-color: #f9f9f9;
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-wrapper video {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Etapas */
+.etapas {
+  background-color: #ffffff;
+}
+
+.etapas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.etapa-card {
+  padding: 40px 30px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etapa-ativa {
+  background: linear-gradient(135deg, #2D3359 0%, #1f243f 100%);
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(45, 51, 89, 0.3);
+}
+
+.etapa-ativa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(45, 51, 89, 0.4);
+}
+
+.etapa-desabilitada {
+  background-color: #f0f0f0;
+  color: #aaa;
+  border: 2px dashed #ccc;
+}
+
+.etapa-desabilitada h3 {
+  color: #bbb;
+}
+
+.etapa-desabilitada .etapa-descricao {
+  color: #bbb;
+}
+
+.etapa-badge {
+  display: inline-block;
+  background: #700202;
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.etapa-badge-disabled {
+  background: #ccc;
+  color: #888;
+}
+
+.etapa-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.etapa-ativa h3 {
+  color: #ffffff;
+}
+
+.etapa-descricao {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.etapa-ativa .etapa-descricao {
+  color: #d0d4e8;
+}
+
+.etapa-meta {
+  margin-top: 20px;
+}
+
+.alvo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.etapa-ativa .alvo {
+  color: #f5b921;
+}
+
+.etapa-desabilitada .alvo {
+  color: #bbb;
+  font-style: italic;
+}
+
+.progresso-container-campanha {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.progresso-barra-campanha {
+  height: 100%;
+  background: linear-gradient(135deg, #f5b921 0%, #e0a800 100%);
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.porcentagem-campanha {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f5b921;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-campanha h1 {
+    font-size: 2rem;
+  }
+
+  .hero-campanha p {
+    font-size: 1.1rem;
+  }
+
+  .container-campanha h2 {
+    font-size: 2rem;
+  }
+
+  .etapas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .etapa-card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-campanha {
+    height: 300px;
+  }
+
+  .hero-campanha h1 {
+    font-size: 1.8rem;
+  }
+
+  .container-campanha {
+    padding: 40px 15px;
+  }
+
+  .etapa-card {
+    padding: 25px 20px;
+  }
+}

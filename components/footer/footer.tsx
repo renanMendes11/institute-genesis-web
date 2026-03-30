@@ -8,6 +8,7 @@ export default function Footer() {
     <div className="footer-container">
       <div className="footer-logo">
         <h2>Instituto Gênesis</h2>
+        <p className="footer-slogan">Lugar de novos começos.</p>
         <p>Promovendo educação, acolhimento e transformação social.</p>
       </div>
 
@@ -16,6 +17,7 @@ export default function Footer() {
         <ul>
           <li><Link href="/quem-somos">Sobre</Link></li>
           <li><Link href="/projetos">Projetos</Link></li>
+          <li><Link href="/campanha">Campanha de Construção</Link></li>
           <li><Link href="/contribua">Contribua</Link></li>
         </ul>
       </div>
